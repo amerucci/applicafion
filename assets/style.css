@@ -84,14 +84,92 @@ span.genderIndication {
     background-size: cover!important;
 }
 
-input[type="file"] {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    float: left;
-    background: #FF9900;
+.shareAss{
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     left: 50%;
     transform: translate(-50%, 0);
+    text-align:
+    center;
+  color:#fff;
+    text-transform:
+    uppercase;
+  letter-spacing:4px;
+  font-size:13px; 
+  line-height:25px
+;
+    margin-bottom: 10p;
+}
+
+label{
+    display: inline-block;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  position:relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+ .roundInner{
+    position:
+    absolute;
+    height: 90px;
+    width: 90px;
+    border: 2px solid #FFF;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cameraBtn{
+    font-size: 40px!important;
+  }
+
+  .straight{
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+    margin-top: 10px;
+}
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0) rotate(-180deg);}	
+	40% {-webkit-transform: translateY(-10px) rotate(-180deg);}
+	60% {-webkit-transform: translateY(-5px)  rotate(-180deg);}
+}
+ 
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0) rotate(-180deg);}
+	40% {-moz-transform: translateY(-10px) rotate(-180deg);}
+	60% {-moz-transform: translateY(-5px)  rotate(-180deg);}
+}
+ 
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-5px) ;}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% { transform: translateY(0) rotate(-180deg); -webkit-transform: translateY(0) rotate(-180deg); -moz-transform: translateY(0) rotate(-180deg); -ms-transform: translateY(0) rotate(-180deg); -o-transform: translateY(0) rotate(-180deg); }
+	40% { transform: translateY(-10px) rotate(-180deg); -webkit-transform: translateY(-10px) rotate(-180deg); -moz-transform: translateY(-10px) rotate(-180deg); -ms-transform: translateY(-10px) rotate(-180deg); -o-transform: translateY(-10px) rotate(-180deg); }
+	60% { transform: translateY(-5px)  rotate(-180deg); -webkit-transform: translateY(-5px)  rotate(-180deg); -moz-transform: translateY(-5px)  rotate(-180deg); -ms-transform: translateY(-5px)  rotate(-180deg); -o-transform: translateY(-5px)  rotate(-180deg); }
 }
