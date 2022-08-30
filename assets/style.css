@@ -78,3 +78,20 @@ span.genderIndication {
 .prefer {
     width: 90%;
 }
+
+#home{
+    height:100vh;
+    background-size: cover!important;
+}
+
+input[type="file"] {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    float: left;
+    background: #FF9900;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
