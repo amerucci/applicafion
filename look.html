@@ -1,0 +1,12 @@
+<div class="look"></div>
+
+
+
+
+<script>
+   // document.querySelector(".look").style.backgroundImage = `url(${uploaded_image})`;
+   const queryString = window.location.search;
+   const urlParams = new URLSearchParams(queryString);
+    const product = urlParams.get('ptitcul')
+console.log(product);
+</script>

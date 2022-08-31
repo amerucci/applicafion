@@ -95,7 +95,7 @@ span.genderIndication {
     text-transform:
     uppercase;
   letter-spacing:4px;
-  font-size:13px; 
+    font-size:13px; 
   line-height:25px
 ;
     margin-bottom: 10p;
@@ -148,6 +148,7 @@ label{
     -moz-animation: bounce 2s infinite;
     -o-animation: bounce 2s infinite;
     margin-top: 10px;
+    width: 100%;
 }
 
 
@@ -173,3 +174,16 @@ label{
 	40% { transform: translateY(-10px) rotate(-180deg); -webkit-transform: translateY(-10px) rotate(-180deg); -moz-transform: translateY(-10px) rotate(-180deg); -ms-transform: translateY(-10px) rotate(-180deg); -o-transform: translateY(-10px) rotate(-180deg); }
 	60% { transform: translateY(-5px)  rotate(-180deg); -webkit-transform: translateY(-5px)  rotate(-180deg); -moz-transform: translateY(-5px)  rotate(-180deg); -ms-transform: translateY(-5px)  rotate(-180deg); -o-transform: translateY(-5px)  rotate(-180deg); }
 }
+
+#display-image{
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid black; */
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    margin-bottom: 50px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
