@@ -47,6 +47,13 @@ image_input.addEventListener("change", function () {
   });
   reader.readAsDataURL(this.files[0]);
 
+//AJAX UPLOAD
+fetch('./img/fions/actions.php', {
+  method: 'POST',
+  body : new FormData(document.getElementById('selectAnAss'))
+  
+}).then(console.log(response => response.json()))
+
   //CHANGING BUTTON IF IMAGE CHOOSEN
   document.querySelector(".takeAPicture").style = "display:none;";
   let send = document.createElement("div");
